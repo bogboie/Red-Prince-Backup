@@ -8,16 +8,21 @@ public class soldierSpawner : MonoBehaviour
     public Transform ground;
     public Transform prince;
     public Vector3 offset;
+    public float min = 2f;
+    public float max = 3f;
 
     // Start is called before the first frame update
     void Start()
     {
         transform.position = ground.position;
+        min = transform.position.x;
+        max = transform.position.x + 3;
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position = prince.position + offset;
+        transform.position = new Vector3(Mathf.PingPong(Time.time * 2, max - min) + min, transform.position.y, transform.position.z);
     }
 }

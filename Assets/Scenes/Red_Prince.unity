@@ -128,6 +128,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5505993936223537040, guid: eb9e5ba47ccd14686adaedc9e05a8247, type: 3}
   m_PrefabInstance: {fileID: 5505993936310359044}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &247333440 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -7493596028755563170, guid: 7929f9475ef7c4912966b23766ea76ec, type: 3}
+  m_PrefabInstance: {fileID: 499859767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &499859767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -529,6 +534,14 @@ PrefabInstance:
       value: Soldier (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5505993936223537035, guid: eb9e5ba47ccd14686adaedc9e05a8247, type: 3}
+      propertyPath: max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505993936223537035, guid: eb9e5ba47ccd14686adaedc9e05a8247, type: 3}
+      propertyPath: min
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505993936223537035, guid: eb9e5ba47ccd14686adaedc9e05a8247, type: 3}
       propertyPath: ground
       value: 
       objectReference: {fileID: 1032434341}
@@ -607,6 +620,8 @@ GameObject:
   - component: {fileID: 1156752417}
   - component: {fileID: 1156752416}
   - component: {fileID: 1156752422}
+  - component: {fileID: 1156752421}
+  - component: {fileID: 1156752420}
   m_Layer: 0
   m_Name: The Prince
   m_TagString: Untagged
@@ -684,12 +699,55 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156752415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.51, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1156752420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156752415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7559f37cc29a4b49a4b22218faf994c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &1156752421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156752415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 2d64685096ff64dbd8c0a06fb8b0bdee, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!54 &1156752422
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -730,7 +788,7 @@ PrefabInstance:
     - target: {fileID: 5505993936223537035, guid: eb9e5ba47ccd14686adaedc9e05a8247, type: 3}
       propertyPath: ground
       value: 
-      objectReference: {fileID: 1032434341}
+      objectReference: {fileID: 247333440}
     - target: {fileID: 5505993936223537035, guid: eb9e5ba47ccd14686adaedc9e05a8247, type: 3}
       propertyPath: prince
       value: 
