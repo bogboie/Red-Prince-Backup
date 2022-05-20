@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 public class PlayerControls : MonoBehaviour
 {
     public float speed = 0;
+    public GameObject follower;
+
     private Rigidbody rb;
     private float movementX;
     private float movementY;
@@ -28,5 +30,14 @@ public class PlayerControls : MonoBehaviour
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
 
         rb.AddForce(movement * speed);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Spawn platform"))
+        {
+            other.gameObject.SetActive(false);
+            follower.SetActive(true);
+        }
     }
 }

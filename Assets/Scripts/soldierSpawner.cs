@@ -7,6 +7,7 @@ public class soldierSpawner : MonoBehaviour
     public float speed = 0;
     public Transform ground;
     public Transform prince;
+    public GameObject soldier;
     public Vector3 offset;
     public float min = 2f;
     public float max = 3f;
@@ -14,6 +15,7 @@ public class soldierSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         transform.position = ground.position;
         min = transform.position.x;
         max = transform.position.x + 3;
