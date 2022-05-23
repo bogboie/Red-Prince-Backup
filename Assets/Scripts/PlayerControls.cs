@@ -34,10 +34,12 @@ public class PlayerControls : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Spawn platform"))
+        if (other.gameObject.CompareTag("Spawn short soldier"))
         {
             other.gameObject.SetActive(false);
             follower.SetActive(true);
+
+            
         }
     }
 }

@@ -15,7 +15,7 @@ public class soldierSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        soldier.SetActive(false);
         transform.position = ground.position;
         min = transform.position.x;
         max = transform.position.x + 3;

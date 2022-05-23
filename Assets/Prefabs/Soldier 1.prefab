@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5505993936223537035}
   m_Layer: 0
   m_Name: Soldier 1
-  m_TagString: Untagged
+  m_TagString: short range soldier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,6 +111,7 @@ MonoBehaviour:
   speed: 2
   ground: {fileID: 0}
   prince: {fileID: 0}
+  soldier: {fileID: 0}
   offset: {x: 1, y: 0, z: 1}
   min: 2
   max: 3
