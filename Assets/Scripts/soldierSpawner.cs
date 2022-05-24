@@ -16,13 +16,12 @@ public class soldierSpawner : MonoBehaviour
     void Start()
     {
         soldier.SetActive(false);
-        transform.position = ground.position;
         min = transform.position.x;
         max = transform.position.x + 3;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.position = prince.position + offset;
         transform.position = new Vector3(Mathf.PingPong(Time.time * 2, max - min) + min, transform.position.y, transform.position.z);

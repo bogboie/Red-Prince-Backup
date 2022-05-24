@@ -7,6 +7,8 @@ public class PlayerControls : MonoBehaviour
 {
     public float speed = 0;
     public GameObject follower;
+    public GameObject follower1;
+    public GameObject follower2;
 
     private Rigidbody rb;
     private float movementX;
@@ -38,8 +40,8 @@ public class PlayerControls : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             follower.SetActive(true);
-
-            
+            follower1.SetActive(true);
+            follower2.SetActive(true);
         }
     }
 }

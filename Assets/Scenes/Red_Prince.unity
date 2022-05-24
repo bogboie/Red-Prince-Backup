@@ -728,6 +728,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   follower: {fileID: 771559932}
+  follower1: {fileID: 1879371371}
+  follower2: {fileID: 1946069918}
 --- !u!114 &1156752421
 MonoBehaviour:
   m_ObjectHideFlags: 0
