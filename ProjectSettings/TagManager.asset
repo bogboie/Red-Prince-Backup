@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Spawn short soldier
   - short range soldier
+  - Block
+  - spawnSoldier
+  - spawnSoldier2
+  - spawnSoldier3
+  - spawnSoldier4
+  - spawnSoldier5
+  - spawnSoldier6
   layers:
   - Default
   - TransparentFX
