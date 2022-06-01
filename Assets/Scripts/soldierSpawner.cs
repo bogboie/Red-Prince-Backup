@@ -5,7 +5,6 @@ using UnityEngine;
 public class soldierSpawner : MonoBehaviour
 {
     public float speed = 0;
-    public Transform ground;
     public Transform prince;
     public GameObject soldier;
     public Vector3 offset;

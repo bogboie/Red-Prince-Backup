@@ -3,7 +3,42 @@ guid: b7559f37cc29a4b49a4b22218faf994c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - follower: {fileID: 5505993936223537034, guid: eb9e5ba47ccd14686adaedc9e05a8247, type: 3}
+  - follower1: {instanceID: 0}
+  - follower2: {instanceID: 0}
+  - follower3: {instanceID: 0}
+  - follower4: {instanceID: 0}
+  - follower5: {instanceID: 0}
+  - follower6: {instanceID: 0}
+  - follower7: {instanceID: 0}
+  - follower8: {instanceID: 0}
+  - follower9: {instanceID: 0}
+  - follower10: {instanceID: 0}
+  - follower11: {instanceID: 0}
+  - follower12: {instanceID: 0}
+  - follower13: {instanceID: 0}
+  - follower14: {instanceID: 0}
+  - follower15: {instanceID: 0}
+  - follower16: {instanceID: 0}
+  - follower17: {instanceID: 0}
+  - follower18: {instanceID: 0}
+  - follower19: {instanceID: 0}
+  - follower20: {instanceID: 0}
+  - follower21: {instanceID: 0}
+  - follower22: {instanceID: 0}
+  - follower23: {instanceID: 0}
+  - follower24: {instanceID: 0}
+  - follower25: {instanceID: 0}
+  - follower26: {instanceID: 0}
+  - follower27: {instanceID: 0}
+  - follower28: {instanceID: 0}
+  - follower29: {instanceID: 0}
+  - follower30: {instanceID: 0}
+  - follower31: {instanceID: 0}
+  - follower32: {instanceID: 0}
+  - follower33: {instanceID: 0}
+  - follower34: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
