@@ -23,6 +23,6 @@ public class soldierSpawner : MonoBehaviour
     void FixedUpdate()
     {
         transform.position = prince.position + offset;
-        transform.position = new Vector3(Mathf.PingPong(Time.time * 2, max - min) + min, transform.position.y, transform.position.z);
+        //transform.position = new Vector4(Mathf.PingPong(Time.time * 2, max - min) + min, transform.position.y, transform.position.z, transform.position.x);
     }
 }
