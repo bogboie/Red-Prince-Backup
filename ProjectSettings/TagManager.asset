@@ -7,6 +7,7 @@ TagManager:
   - Spawn short soldier
   - short range soldier
   - Block
+  - His royal highness
   layers:
   - Default
   - TransparentFX

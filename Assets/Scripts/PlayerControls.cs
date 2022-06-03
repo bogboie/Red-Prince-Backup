@@ -40,11 +40,13 @@ public class PlayerControls : MonoBehaviour{
     public GameObject follower32;
     public GameObject follower33;
     public GameObject follower34;
+    public GameObject block;
 
     private Rigidbody rb;
     private float movementX;
     private float movementY;
     private int spawnCount = 0;
+    private int numSoldiers = 0;
     // Start is called before the first frame update
     void Start(){
         rb = GetComponent<Rigidbody>();
@@ -73,6 +75,7 @@ public class PlayerControls : MonoBehaviour{
             follower3.SetActive(true);
             follower4.SetActive(true);
             spawnCount++;
+            numSoldiers = numSoldiers + 5;
         }
         else if (other.gameObject.CompareTag("Spawn short soldier") && spawnCount == 1) {
             other.gameObject.SetActive(false);
@@ -82,6 +85,7 @@ public class PlayerControls : MonoBehaviour{
             follower8.SetActive(true);
             follower9.SetActive(true);
             spawnCount++;
+            numSoldiers = numSoldiers + 5;
         }
         else if (other.gameObject.CompareTag("Spawn short soldier") && spawnCount == 2) {
             other.gameObject.SetActive(false);
@@ -91,6 +95,7 @@ public class PlayerControls : MonoBehaviour{
             follower13.SetActive(true);
             follower14.SetActive(true);
             spawnCount++;
+            numSoldiers = numSoldiers + 5;
         }
         else if (other.gameObject.CompareTag("Spawn short soldier") && spawnCount == 3)
         {
@@ -101,6 +106,7 @@ public class PlayerControls : MonoBehaviour{
             follower18.SetActive(true);
             follower19.SetActive(true);
             spawnCount++;
+            numSoldiers = numSoldiers + 5;
         }
         else if (other.gameObject.CompareTag("Spawn short soldier") && spawnCount == 4)
         {
@@ -111,6 +117,7 @@ public class PlayerControls : MonoBehaviour{
             follower23.SetActive(true);
             follower24.SetActive(true);
             spawnCount++;
+            numSoldiers = numSoldiers + 5;
         }
         else if (other.gameObject.CompareTag("Spawn short soldier") && spawnCount == 5)
         {
@@ -121,6 +128,7 @@ public class PlayerControls : MonoBehaviour{
             follower28.SetActive(true);
             follower29.SetActive(true);
             spawnCount++;
+            numSoldiers = numSoldiers + 5;
         }
         else if (other.gameObject.CompareTag("Spawn short soldier") && spawnCount == 6)
         {
@@ -130,6 +138,11 @@ public class PlayerControls : MonoBehaviour{
             follower32.SetActive(true);
             follower33.SetActive(true);
             follower34.SetActive(true);
+            numSoldiers = numSoldiers + 5;
+        }
+        else if(other.gameObject.CompareTag("Block") && numSoldiers == 35)
+        {
+            block.gameObject.SetActive(false);
         }
     }
 }
